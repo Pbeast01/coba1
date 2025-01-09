@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responses</title>
+</head>
+<body>
+    <h1>All Responses</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Response</th>
+        </tr>
+        {% for name, response in data %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ response }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Go back to the main page</a>
+</body>
+</html>
